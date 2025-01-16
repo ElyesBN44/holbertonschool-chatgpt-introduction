@@ -5,13 +5,13 @@ def factorial(n):
     result = 1
     while n > 1:
         result *= n
-        n -= 1  # Decrement n to prevent infinite loop
+        n -= 1  
     return result
 
 if __name__ == "__main__":
-    if len(sys.argv) > 1:  # Ensure an argument is provided
+    if len(sys.argv) > 1: 
         try:
-            number = int(sys.argv[1])  # Convert the argument to an integer
+            number = int(sys.argv[1]) 
             if number < 0:
                 print("Factorial is not defined for negative numbers.")
             else:
